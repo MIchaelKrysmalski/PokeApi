@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "Layout";
+    ViewData["Title"] = "List of Pokemon";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using PokeApi.Model
+
+<div class="container" style="text-align: center;">
+    <article class="pokemon-container" style="background-color:@Model.color;border: 1px solid gray; padding: 8px;">
+        <figure class="pokemon-container-image">
+            <img src="@Model.sprites[0]" />
+        </figure>
+        <div class="pokemon-container-content">
+            <h3 class="pokemon-container-title">@Model.name</h3>
+            <p class="pokemon-container-attribute">Height: @Model.height</p>
+            <p class="pokemon-container-attribute">Weight: @Model.weight</p>
+            <div class="collapse multi-collapse" id="@Model.id">
+                <div>
+                    <p class="pokemon-container-attribute">Hp: @Model.hp</p>
+                    <p class="pokemon-container-attribute">Atk: @Model.attack</p>
+                    <p class="pokemon-container-attribute">Def: @Model.defense</p>
+                    <a href="/pokemon/byId/@Model.id" style="text-align: center;" class="card-link">More Details</a>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#@Model.id" aria-expanded="false" aria-controls="@Model.id">
+                details
+            </button>
+            <a href="/user/addPokemon/@Model.id" class="card-link" style="text-align: center;">Add to Collection</a>
+        </div>
+    </article>
+    <a href="/Pokemon/RandomPokemon">Continue</a>
+</div>

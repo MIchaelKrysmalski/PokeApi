@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "Layout";
+    ViewData["Title"] = "List of Pokemon";
+}
+<h2 style="text-align: center;">Pokemon Collection</h2>
+<div class="pokemon-containers">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <article class="pokemon-container" style="background-color:@Model[i].color;border: 1px solid gray; padding: 8px;">
+            <figure class="pokemon-container-image">
+                <img src="@Model[i].sprites[0]" />
+            </figure>
+            <div class="pokemon-container-content">
+                <h3 class="pokemon-container-title">@Model[i].name</h3>
+                <p class="pokemon-container-attribute">Height: @Model[i].height</p>
+                <p class="pokemon-container-attribute">Weight: @Model[i].weight</p>
+                <div class="collapse multi-collapse" id="@Model[i].id">
+                    <div>
+                        <p class="pokemon-container-attribute">Hp: @Model[i].hp</p>
+                        <p class="pokemon-container-attribute">Atk: @Model[i].attack</p>
+                        <p class="pokemon-container-attribute">Def: @Model[i].defense</p>
+                        <a href="/pokemon/byId/@Model[i].id" style="text-align: center;" class="card-link">More Details</a>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#@Model[i].id" aria-expanded="false" aria-controls="@Model[i].id">
+                    details
+                </button>
+                <a href="/user/removePokemon/@Model[i].id" class="card-link" style="text-align: center;">Remove from Collection</a>
+
+            </div>
+        </article>
+    }
+</div>

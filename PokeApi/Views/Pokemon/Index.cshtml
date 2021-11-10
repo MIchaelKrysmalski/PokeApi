@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "Layout";
+    ViewData["Title"] = "List of Pokemon";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h2>Pokemon</h2>
+<form method="POST" asp-controller="Pokemon" asp-action="LoadPokemonData" class="row g-3">
+    <div class="col-md-12">
+        <button type="submit" class="btn btn-primary" value="ok">Load</button>
+    </div>
+</form>
+

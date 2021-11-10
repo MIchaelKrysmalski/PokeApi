@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "Layout";
+    ViewData["Title"] = "Login";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using PokeApi.Model.Models
+@model RegisterModel
+
+<form method="POST" asp-controller="Authentication" asp-action="CreateNewUser" class="row g-3">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="col-6">
+        <label for="Username" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="Username" name="Username" asp-for="Username" placeholder="Username">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="col-6">
+        <label for="Email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="Email" name="Email" asp-for="Email" placeholder="Email">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="col-6">
+        <label for="Password" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="Password" name="Password" asp-for="Password" placeholder="Password">
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="col-md-12">
+        <button type="submit" class="btn btn-primary" value="ok">Login</button>
+    </div>
+</form>

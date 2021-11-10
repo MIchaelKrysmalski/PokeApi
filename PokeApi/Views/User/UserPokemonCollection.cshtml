@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "Layout";
+    ViewData["Title"] = "List of Pokemon";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using PokeApi.Model
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 style="text-align:center">
+                Users Favorite Pokemon
+            </h2>
+        </div>
+    </div>
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <hr class="mt-2 mb-3" />
+        <div class="row">
+            <div class="col">
+                <h3 style="text-align: center;">@Model[i].username's Pokemon</h3>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col">
+                <div class="pokemon-containers">
+                    @for (int j = 0; j < Model[i].pokemons.Count; j++)
+                    {
+                        <article class="pokemon-container" style="background-color:@Model[i].pokemons[j].color;border: 1px solid gray; padding: 8px;">
+                            <figure class="pokemon-container-image">
+                                <img src="@Model[i].pokemons[j].sprites[0]" />
+                            </figure>
+                            <div class="pokemon-container-content">
+                                <h3 class="pokemon-container-title">@Model[i].pokemons[j].name</h3>
+                                <p class="pokemon-container-attribute">Height: @Model[i].pokemons[j].height</p>
+                                <p class="pokemon-container-attribute">Weight: @Model[i].pokemons[j].weight</p>
+                                <div class="collapse multi-collapse" id="@Model[i].pokemons[j].id">
+                                    <div>
+                                        <p class="pokemon-container-attribute">Hp: @Model[i].pokemons[j].hp</p>
+                                        <p class="pokemon-container-attribute">Atk: @Model[i].pokemons[j].attack</p>
+                                        <p class="pokemon-container-attribute">Def: @Model[i].pokemons[j].defense</p>
+                                        <a href="/pokemon/byId/@Model[i].pokemons[j].id" style="text-align: center;" class="card-link">More Details</a>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#@Model[i].pokemons[j].id" aria-expanded="false" aria-controls="@Model[i].id">
+                                    details
+                                </button>
+                                <a href="/user/addPokemon/@Model[i].pokemons[j].id" class="card-link" style="text-align: center;">Add to Collection</a>
+
+                            </div>
+                        </article>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

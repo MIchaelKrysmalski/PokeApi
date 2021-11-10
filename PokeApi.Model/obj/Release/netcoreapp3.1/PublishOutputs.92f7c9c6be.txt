@@ -1,0 +1,3 @@
+C:\Users\jupit\source\repos\PokeApi\PokeApi.Model\bin\Release\netcoreapp3.1\publish\PokeApi.Model.dll
+C:\Users\jupit\source\repos\PokeApi\PokeApi.Model\bin\Release\netcoreapp3.1\publish\PokeApi.Model.deps.json
+C:\Users\jupit\source\repos\PokeApi\PokeApi.Model\bin\Release\netcoreapp3.1\publish\PokeApi.Model.pdb
