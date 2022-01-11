@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\PokeApi.csproj",
+  "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\PokeApi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,52 +14402,52 @@
   "RootNamespace": "PokeApi",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Authentication\\Login.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Authentication\\Login.cshtml",
       "TargetPath": "Views\\Authentication\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Authentication\\register.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Authentication\\register.cshtml",
       "TargetPath": "Views\\Authentication\\register.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Pokemon\\Index.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Pokemon\\Index.cshtml",
       "TargetPath": "Views\\Pokemon\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Shared\\Layout.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Shared\\Layout.cshtml",
       "TargetPath": "Views\\Shared\\Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\User\\Index.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\User\\Index.cshtml",
       "TargetPath": "Views\\User\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Pokemon\\ById.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Pokemon\\ById.cshtml",
       "TargetPath": "Views\\Pokemon\\ById.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Pokemon\\Pokedex.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Pokemon\\Pokedex.cshtml",
       "TargetPath": "Views\\Pokemon\\Pokedex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\User\\UserPokemonCollection.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\User\\UserPokemonCollection.cshtml",
       "TargetPath": "Views\\User\\UserPokemonCollection.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Pokemon\\RandomPokemon.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Pokemon\\RandomPokemon.cshtml",
       "TargetPath": "Views\\Pokemon\\RandomPokemon.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jupit\\source\\repos\\PokeApi\\PokeApi\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\jupit\\Source\\Repos\\PokeApi\\PokeApi\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
